@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alta de alumnos</title>
+</head>
+<body>
+<form action="<?php> echo $_SERVER['PHP_SELF'];?>" method="POST">
+	Ingresa tu name:
+	<br>
+	<input type="text" name="nombre">
+	<br>
+	Ingresa tu E-mail:
+	<br>
+	<input type="text" name="mail">
+<br>
+Selecciona el curso:
+<?php
+$mishi=mysqli_connect("localhost","root", "", "base1a") or die ("Error en la conexion.");
+
+
+	?>
+
+</form>
+</body>
+</html>
